@@ -1,13 +1,13 @@
-<main class="container bg-light p-5">
-  <form [formGroup]="catchFormGroup" class="col-6 mx-auto">
-    <h1 class="mb-4">Product Registration</h1>
+<main class="container bg-light p-3">
+  <form [formGroup]="catchFormGroup" class="col-3 mx-auto">
+    <h1 class="mb-4">Registro de Produtos</h1>
     <div class="row mb-3">
       <div class="col">
         <label for="id" class="form-label">ID:</label>
         <input type="text" formControlName="id" class="form-control" id="id" />
       </div>
       <div class="col">
-        <label for="Name" class="form-label">Name:</label>
+        <label for="Name" class="form-label">Nomes:</label>
         <input
           type="text"
           formControlName="name"
@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="mb-3">
-      <label for="Description" class="form-label">Description:</label>
+      <label for="Description" class="form-label">Descrição:</label>
       <textarea
         class="form-control"
         formControlName="description"
@@ -26,7 +26,7 @@
     </div>
     <div class="row mb-3">
       <div class="col">
-        <label for="Price" class="form-label">Price:</label>
+        <label for="Price" class="form-label">Preço:</label>
         <input
           type="text"
           formControlName="price"
@@ -35,7 +35,7 @@
         />
       </div>
       <div class="col">
-        <label for="Quantity" class="form-label">Quantity:</label>
+        <label for="Quantity" class="form-label">Quantidades:</label>
         <input
           type="text"
           formControlName="quantity"
@@ -50,19 +50,19 @@
         (click)="submit()"
         class="btn btn-dark btn-lg btn-block"
       >
-        Submit
+        Cadastrar
       </button>
     </div>
     <div class="p-5">
-      <h3 class="mb-4 text-center">Products</h3>
+      <h3 class="mb-4 text-center">Produtos</h3>
       <table class="table table-striped">
         <thead>
           <tr>
             <th scope="col">ID</th>
-            <th scope="col">Name</th>
-            <th scope="col">Description</th>
-            <th scope="col">Price</th>
-            <th scope="col">Quantity</th>
+            <th scope="col">Nomes</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Preço</th>
+            <th scope="col">Quantidades</th>
           </tr>
         </thead>
         <tbody>
